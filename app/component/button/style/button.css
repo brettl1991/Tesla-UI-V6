@@ -1,4 +1,17 @@
+body {
+  background-color: aqua;
+}
+
 [data-button] {
-  color: aqua;
-  background-color: azure;
+  width: 256px;
+  border-radius: 12px;
+  height: 40px;
+
+  color: white;
+  background-color: #181b21;
+}
+
+[data-light] {
+  background-color: white;
+  color: #181b21;
 }
