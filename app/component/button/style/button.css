@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
 body {
   background-color: aqua;
 }
@@ -9,9 +11,14 @@ body {
 
   color: white;
   background-color: #181b21;
+
+  /* text */
+
+  font-size: 14px;
+  font-family: "Roboto";
 }
 
 [data-light] {
-  background-color: white;
-  color: #181b21;
+  background-color: #e3e3e3;
+  color: #000;
 }
