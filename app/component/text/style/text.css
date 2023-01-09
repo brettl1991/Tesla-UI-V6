@@ -1,4 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
 [data-text] {
-  color: lime;
-  background-color: brown;
+  color: #000;
+  font-size: 14px;
+  padding: 8px;
+}
+
+[data-title] {
+  font-weight: 500;
+  font-size: 40px;
+}
+
+[data-underline] {
+  text-decoration: underline;
 }

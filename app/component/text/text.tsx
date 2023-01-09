@@ -2,7 +2,7 @@ import textStyle from "./style/text.css";
 
 import type { LinksFunction } from "@remix-run/react/dist/routeModules";
 import type { ReactNode } from "react";
-import { textType } from "./text.type";
+import type { textType } from "./text.type";
 
 const textLink: LinksFunction = () => [
   {
@@ -11,8 +11,12 @@ const textLink: LinksFunction = () => [
   },
 ];
 
-const Text = ({ children }: textType) => {
-  return <span data-text>{children}</span>;
+const Text = ({ children, title, underline }: textType) => {
+  return (
+    <span data-text data-title={title} data-underline={underline}>
+      {children}
+    </span>
+  );
 };
 
 export { Text, textLink };
