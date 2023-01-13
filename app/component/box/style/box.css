@@ -1,0 +1,20 @@
+[data-box="flex"] {
+  display: flex;
+}
+
+[data-box="grid"] {
+  display: grid;
+}
+
+[data-gap] {
+  gap: 12px;
+}
+
+[data-vertical] {
+  flex-direction: column;
+}
+
+[data-box="flex"],
+[data-box="grid"] {
+  padding: 0;
+}
