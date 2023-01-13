@@ -1,4 +1,11 @@
-import { Button, buttonLink, textLink, Text } from "~/component";
+import {
+  Button,
+  buttonLink,
+  textLink,
+  Text,
+  chevronLink,
+  Chevron,
+} from "~/component";
 
 import type { LinksFunction } from "@remix-run/node";
 import { globalLink } from "~/component/global/global";
@@ -7,6 +14,7 @@ export const links: LinksFunction = () => [
   ...buttonLink(),
   ...textLink(),
   ...globalLink(),
+  ...chevronLink(),
 ];
 
 const TeslaUIPOCV6 = () => {
@@ -23,6 +31,7 @@ const TeslaUIPOCV6 = () => {
       <Button>Model S</Button>
       <Button light>Model S</Button>
       <Button>Model S</Button>
+      <Chevron />
     </div>
   );
 };
