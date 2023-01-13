@@ -15,9 +15,9 @@ const Chevron = () => {
       <div data-chevron>
         <img src="/chevron.svg" alt="Arrow down" width={24} />
       </div>
-      <div data-chevron data-rotate="180">
+      {/* <div data-chevron data-rotate="180">
         <img src="/chevron.svg" alt="Arrow down" width={24} />
-      </div>
+      </div> */}
     </>
   );
 };

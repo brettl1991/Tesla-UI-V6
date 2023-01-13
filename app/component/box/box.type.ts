@@ -5,4 +5,7 @@ export type boxType = {
   display?: "flex" | "grid";
   gap?: boolean;
   vertical?: boolean;
+  fullHeight?: boolean;
+  align?: "center" | "start" | "end";
+  justify?: "center" | "start" | "end";
 };

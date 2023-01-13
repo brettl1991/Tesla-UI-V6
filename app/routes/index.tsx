@@ -22,38 +22,21 @@ export const links: LinksFunction = () => [
 
 const TeslaUIPOCV6 = () => {
   return (
-    <div>
-      <Text title>Tesla UI V6 - Proof Of Concept</Text>
-      <Box display="flex" vertical gap>
-        <Box display="grid">
-          <Text title>Model X</Text>
-          <Text>Order Online for</Text>
-          <Text underline>Touchless Delivery</Text>
-        </Box>
-        <Box display="grid">
-          <Text title>Solar Panels</Text>
-          <Text>Lowest Cost Solar Panels in America</Text>
-        </Box>
+    <Box fullHeight display="flex" vertical gap>
+      <Box display="grid">
+        <Text title>Model S</Text>
+        <Text>Order Online for</Text>
+        <Text underline>Touchless Delivery</Text>
       </Box>
-      <Box display="flex" gap vertical>
-        <Button light>Model S</Button>
-        <Button>Model Y</Button>
-        <Button>Model Y</Button>
-        <Button>Model Y</Button>
-      </Box>
-      <Box display="flex" gap>
-        <Button>Model Y</Button>
-        <Button>Model Y</Button>
-      </Box>
-      <Text underline>Tesla UI V6 - Proof Of Concept</Text>
-      <Text title underline>
-        Tesla UI V6 - Proof Of Concept
-      </Text>
-      <Chevron />
 
-      <Button light>Model S</Button>
-      <Button>Model S</Button>
-    </div>
+      <Box vertical display="flex" gap align="center" justify="center">
+        <Box display="flex" gap vertical>
+          <Button>CUSTOM ORDER</Button>
+          <Button>EXISTING INVENTORY</Button>
+        </Box>
+        <Chevron />
+      </Box>
+    </Box>
   );
 };
 

@@ -9,9 +9,24 @@ const boxLink: LinksFunction = () => [
   },
 ];
 
-const Box = ({ children, display, gap, vertical }: T.boxType) => {
+const Box = ({
+  children,
+  display,
+  gap,
+  vertical,
+  fullHeight,
+  align,
+  justify,
+}: T.boxType) => {
   return (
-    <div data-vertical={vertical} data-gap={gap} data-box={display}>
+    <div
+      data-full-height={fullHeight}
+      data-vertical={vertical}
+      data-gap={gap}
+      data-box={display}
+      data-align={align}
+      data-justify={justify}
+    >
       {children}
     </div>
   );
