@@ -22,6 +22,10 @@
   padding: 32px;
 }
 
+[data-full-height] > div:last-child {
+  gap: 64px;
+}
+
 [data-align="center"] {
   align-items: center;
 }
