@@ -27,22 +27,27 @@ const TeslaUIPOCV6 = () => {
     <>
       {sectionList.map((section) => {
         return (
-          <div key={section}>
-            <Box section={section} fullHeight display="flex" vertical gap>
-              <Box display="grid">
-                <Text title>{section}</Text>
-                <Text>Order Online for</Text>
-                <Text underline>Touchless Delivery</Text>
-              </Box>
-              <Box vertical display="flex" gap align="center" justify="center">
-                <Box display="flex" gap vertical>
-                  <Button>CUSTOM ORDER</Button>
-                  <Button>EXISTING INVENTORY</Button>
-                </Box>
-                <Chevron />
-              </Box>
+          <Box
+            key={section}
+            section={section}
+            fullHeight
+            display="flex"
+            vertical
+            gap
+          >
+            <Box display="grid">
+              <Text title>{section}</Text>
+              <Text>Order Online for</Text>
+              <Text underline>Touchless Delivery</Text>
             </Box>
-          </div>
+            <Box vertical display="flex" gap align="center" justify="center">
+              <Box display="flex" gap vertical>
+                <Button>CUSTOM ORDER</Button>
+                <Button>EXISTING INVENTORY</Button>
+              </Box>
+              <Chevron />
+            </Box>
+          </Box>
         );
       })}
     </>
