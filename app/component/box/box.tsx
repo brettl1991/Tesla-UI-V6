@@ -17,12 +17,14 @@ const Box = ({
   fullHeight,
   align,
   justify,
+  section,
 }: T.boxType) => {
   return (
     <div
       data-full-height={fullHeight}
       data-vertical={vertical}
       data-gap={gap}
+      data-section={section}
       data-box={display}
       data-align={align}
       data-justify={justify}
