@@ -28,28 +28,24 @@ const missingDataMap = {
     link: "Touchless Delivery",
     buttonList: ["CUSTOM ORDER", "EXISTING INVENTORY"],
   },
-
   "model-y": {
     title: "Model Y",
     text: "Order Online for",
     link: "Touchless Delivery",
     buttonList: ["CUSTOM ORDER", "EXISTING INVENTORY"],
   },
-
   "model-s": {
     title: "Model S",
     text: "Order Online for",
     link: "Touchless Delivery",
     buttonList: ["CUSTOM ORDER", "EXISTING INVENTORY"],
   },
-
   "model-x": {
     title: "Model X",
     text: "Order Online for",
     link: "Touchless Delivery",
     buttonList: ["CUSTOM ORDER", "EXISTING INVENTORY"],
   },
-
   "solar-panels": {
     title: "Solar Panels",
     text: "Lowest Cost Solar Panels in America",
@@ -60,7 +56,6 @@ const missingDataMap = {
     text: "Order Online for",
     buttonList: ["ORDER NOW", "LEARN MORE"],
   },
-
   accessories: {
     title: "Accessories",
     buttonList: ["SHOP NOW"],
@@ -68,6 +63,8 @@ const missingDataMap = {
 };
 
 const TeslaUIPOCV6 = () => {
+  // grab data
+
   console.log(sectionList);
   return (
     <>
@@ -84,18 +81,22 @@ const TeslaUIPOCV6 = () => {
             <Box display="grid">
               <Text title>{missingDataMap[section].title}</Text>
               <Text>{missingDataMap[section]?.text}</Text>
-              {missingDataMap[section]?.link && <Text underline>{}</Text>}
+              {missingDataMap[section]?.link && (
+                <Text underline>{missingDataMap[section]?.link}</Text>
+              )}
             </Box>
+
             <Box vertical display="flex" gap align="center" justify="center">
               <Box display="flex" gap vertical>
                 {missingDataMap[section].buttonList.map((buttonText, key) => {
                   return (
-                    <Button light={!!key} key={Text}>
+                    <Button light={!!key} key={buttonText}>
                       {buttonText}
                     </Button>
                   );
                 })}
               </Box>
+
               <a
                 href={`#${
                   sectionList[k + 1 === sectionList.length ? 0 : k + 1]
@@ -110,5 +111,4 @@ const TeslaUIPOCV6 = () => {
     </>
   );
 };
-
 export default TeslaUIPOCV6;
