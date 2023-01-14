@@ -16,7 +16,7 @@ body {
   font-family: "Roboto";
 }
 
-[data-light] {
+[data-light="true"] {
   background-color: #e3e3e3;
   color: #000;
 }

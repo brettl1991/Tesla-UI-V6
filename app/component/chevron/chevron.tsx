@@ -1,6 +1,7 @@
 import type { LinksFunction } from "@remix-run/react/dist/routeModules";
 
 import chevronStyle from "./style/chevron.css";
+import type * as T from "./chevron.type";
 
 const chevronLink: LinksFunction = () => [
   {
@@ -9,16 +10,11 @@ const chevronLink: LinksFunction = () => [
   },
 ];
 
-const Chevron = () => {
+const Chevron = ({ rotate }: T.Chevron) => {
   return (
-    <>
-      <div data-chevron>
-        <img src="/chevron.svg" alt="Arrow down" width={24} />
-      </div>
-      {/* <div data-chevron data-rotate="180">
-        <img src="/chevron.svg" alt="Arrow down" width={24} />
-      </div> */}
-    </>
+    <div data-chevron data-rotate={rotate}>
+      <img src="/chevron.svg" alt="Arrow down" width={24} />
+    </div>
   );
 };
 
