@@ -96,7 +96,13 @@ const TeslaUIPOCV6 = () => {
                   );
                 })}
               </Box>
-              <Chevron rotate={k + 1 === sectionList.length ? "180" : ""} />
+              <a
+                href={`#${
+                  sectionList[k + 1 === sectionList.length ? 0 : k + 1]
+                }`}
+              >
+                <Chevron rotate={k + 1 === sectionList.length ? "180" : "0"} />
+              </a>
             </Box>
           </Box>
         );

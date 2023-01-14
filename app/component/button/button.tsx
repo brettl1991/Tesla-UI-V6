@@ -10,7 +10,7 @@ const buttonLink: LinksFunction = () => [
   },
 ];
 
-const Button = ({ children, light }: buttonType) => {
+const Button = ({ children, light }: any) => {
   return (
     <div>
       <button data-button data-light={light}>

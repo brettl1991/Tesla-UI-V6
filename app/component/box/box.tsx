@@ -25,6 +25,7 @@ const Box = ({
       data-vertical={vertical}
       data-gap={gap}
       data-section={section}
+      id={section}
       data-box={display}
       data-align={align}
       data-justify={justify}
